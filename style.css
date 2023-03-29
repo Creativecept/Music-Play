@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    align-items: center;
+    background: #402D01;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.music-player{
+    background: #FFCF13;
+    padding: 25px 35px;
+    text-align: center;
+    width: 400px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+nav .circle{
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px rgba(64, 45, 1, 0.22);
+    color: #FF9B05;
+    height: 40px;
+    line-height: 40px;
+    width: 40px;
+}
+
+.music-player img{
+    border: 8px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 10px 60px rgba(64, 45, 1, 0.5);
+    width: 220px;
+}
+
+.music-player h1{
+    color: #402D01;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.music-player p{
+    color: #402D01;
+    font-size: 14px;
+}
+
+#progress{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    border-radius: 4px;
+    background: #FF9B05;
+    margin: 40px 0;
+    cursor: pointer;
+}
+
+#progress::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: #FF9B05;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    height: 30px;
+    width: 30px;
+    box-shadow: 0 5px 5px rgba(64, 45, 1, 0.22);
+}
+
+.control{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.controls div{
+    background: #fff;
+    border-radius: 50%;
+    color: #FF9B05;
+    display: inline-flex;
+    align-items: center;
+    height: 60px;
+    justify-content: center;
+    margin: 20px;
+    box-shadow: 0 10px 20px rgba(64, 45, 1, 0.22);
+    width: 60px;
+    cursor: pointer;
+}
+
+.controls div:nth-child(2){
+    transform: scale(1.5);
+    color: #fff;
+    background: #FF9B05;
+}
+
+h6{
+    text-align: center;
+    color: #402D01;
+    padding-top: 15px;
+}
+
+@media(max-width: 700px){
+    .controls div{
+        margin: 15px;
+    }
+}
